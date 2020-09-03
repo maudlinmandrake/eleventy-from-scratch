@@ -3,18 +3,7 @@ module.exports = config => {
 config.addPassthroughCopy('./src/images/');
 
 // Returns work items, sored by display order
-config.addCollection('work', collection => {
-  return collection
-    .getFilteredByGlob('./src/work/*.md')
-    .sort((a, b) => (Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1));
-});
-
-config.addCollection('featureWord', collection => {
-  return collection
-    .getFilteredByGlob('./src/work/*.md')
-    .sort((a, b) => ( Number(a.data.displayOrder) > Number(b.data.displayOrder) ? 1 : -1))
-    .filter( x => x.data.featured );
-});
+const sortByDisplayOrder = require('./src/utils/sort-by-display-order.js');
 
   return {
     markdownTemplateEngine: 'njk',
