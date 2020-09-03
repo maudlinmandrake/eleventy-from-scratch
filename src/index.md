@@ -11,4 +11,4 @@ intro:
   imageAlt: 'Buttered toasted white bread'
 ---
 
-This is pretty _rad_, right?
+This is pretty _rad_, right
