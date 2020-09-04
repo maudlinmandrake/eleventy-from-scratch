@@ -1,4 +1,4 @@
-const Cache = require("@11ty/dependency-tree");
+const Cache = require("@11ty/eleventy-cache-assets");
 
 /**
  * Grabs the remote data for studio images and returns back
