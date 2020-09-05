@@ -19,6 +19,7 @@
   "homepage": "https://github.com/maudlinmandrake/eleventy-from-scratch#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "@11ty/eleventy-cache-assets": "^2.0.3"
+    "@11ty/eleventy-cache-assets": "^2.0.3",
+    "moment": "^2.27.0"
   }
 }
