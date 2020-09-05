@@ -1,5 +1,4 @@
 const moment = require("moment");
-const { isModuleDeclaration } = require("babel-types");
 
 module.exports = value => {
   const dateObject = moment(value);
