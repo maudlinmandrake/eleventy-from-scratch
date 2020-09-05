@@ -1,3 +1,4 @@
+
 module.exports = value => {
   const dateObject = new Date(value);
 
