@@ -31,6 +31,7 @@ module.exports = {
    * @returns {Array} The resulting collection
    */
   getSiblingContent(collection, item, limit = 3, random = true) {
+    // Checks to make sure urls in collection do not match the current post URL
     let filteredItems = collection.filter(x => x.url !== item.url);
 
     if(random) {
