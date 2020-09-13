@@ -1,4 +1,6 @@
 {
   "name": "Eleventy from Scratch demo",
-  "url": "https://github.com/maudlinmandrake/eleventy-from-scratch"
+  "url": "https://github.com/maudlinmandrake/eleventy-from-scratch",
+  "authorName": "Issue 33",
+  "authorEmail": "hi@piccalil.li"
 }
