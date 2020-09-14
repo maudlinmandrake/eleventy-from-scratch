@@ -29,3 +29,22 @@ const calculateOutput = ({history}) => {
 
   return response;
 };
+
+// The main Sass method grabs all root Sass files,
+// processes them, then sends them to the output calculator
+const sass = () => {
+  return src("./src/scss/*.scss")
+    .pipe( sassProcessor().on("error", sassProcessor.logError) )
+    .pipe(
+      cleanCSS(
+        isProduction
+          ? {
+            level: 2
+          }
+          : {}
+      )
+    )
+    .pipe( dest(calculateOutput, {sourcemaps: !isProduction}) );
+};
+
+module.exports = sass;
