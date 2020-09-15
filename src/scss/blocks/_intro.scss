@@ -8,4 +8,44 @@
   > * {
     grid-column: 1;
   }
+
+  &__header {
+    padding: get-size("300") get-size("500");
+    background: rgba( get-color("tertiary"), 0.95 );
+    z-index: 1;
+    grid-row: 2;
+    margin: 0 get-size("500"); // adds horizontal gutter
+
+    // prevents from stretching to fill the space
+    align-self: center;
+  }
+
+  &__heading {
+    em {
+      font-style: normal;
+      display: block;
+
+      // weight change creates weird indent; this optical adjustment fixes it
+      transform: translateX(-3px);
+    }
+  }
+
+  &__media {
+    grid-row: 1/4;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    grid-row: 4;
+
+    p {
+      max-width: 30ch;
+    }
+  }
 }
