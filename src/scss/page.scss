@@ -14,3 +14,6 @@ time[datetime] {
   font-size: get-size('700');
   font-style: italic;
 }
+
+// Pull in blocks
+@import 'blocks/post-list';
