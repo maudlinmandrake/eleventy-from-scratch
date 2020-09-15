@@ -73,4 +73,14 @@
       grid-column: 1;
     }
   }
+
+  // flip ratio for larger breakpoints
+  @include media-query("lg") {
+    grid-template-columns: 1fr minmax(44rem, 1fr);
+
+    // bc it's so large, limit image height
+    &__media {
+      height: 28rem;
+    }
+  }
 }
