@@ -1,0 +1,11 @@
+// config and functions
+@import "config";
+
+// set gorko to output no CSS for this file
+$outputTokenCSS: false;
+
+// pull in gorko for design tokens
+@import "../../node_modules/gorko/gorko.scss";
+
+// pull in blocks styling
+@import "blocks/intro";
