@@ -1,0 +1,8 @@
+@import "config";
+
+$outputTokenCSS: false;
+
+@import "../../node_modules/gorko/gorko.scss";
+
+@import "blocks/hero";
+@import "blocks/key-facts";
